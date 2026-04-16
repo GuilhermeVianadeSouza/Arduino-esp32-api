@@ -10,8 +10,6 @@ app.get("/sensor", (req, res) => {
         return res.status(400).send("Dados inválidos");
      }
 
-     console.log(`Temp: ${temp} | Umidade: ${hum}`);
-
      const leitura = {
       temperatura: temp,
       umidade: hum,
