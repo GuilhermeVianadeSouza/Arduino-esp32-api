@@ -13,7 +13,7 @@ app.get("/sensor", (req, res) => {
      const leitura = {
       temperatura: temp,
       umidade: hum,
-      data: new Date()
+      data: new Date().toLocaleString("pt-BR")
    };
    
       dados.push(leitura);
